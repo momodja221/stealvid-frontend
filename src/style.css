@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f7f9f8;
+  background: #080b0b;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(ellipse at 50% 20%, #14251c 0%, transparent 45%),
+    #080b0b;
+}
+
+.header {
+  width: 100%;
+  padding: 24px max(24px, calc((100% - 1160px) / 2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #202925;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.logo span {
+  color: #b5ff3b;
+}
+
+.header-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #87958c;
+}
+
+.main {
+  width: min(100% - 32px, 860px);
+  margin: 0 auto;
+  padding: 100px 0 90px;
+  text-align: center;
+  flex: 1;
+}
+
+.eyebrow {
+  display: inline-block;
+  padding: 9px 16px;
+  border: 1px solid #344b36;
+  border-radius: 30px;
+  color: #b5ff3b;
+  background: #142218;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 30px 0 20px;
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+h1 span {
+  color: #b5ff3b;
+}
+
+.subtitle {
+  color: #9ca9a1;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 38px;
+}
+
+.download-form {
+  display: flex;
+  padding: 7px;
+  gap: 8px;
+  border: 1px solid #34483a;
+  border-radius: 17px;
+  background: #151b18;
+  box-shadow: 0 12px 50px #0005;
+}
+
+.download-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  background: transparent;
+  font-size: 15px;
+}
+
+.download-form button,
+.result button {
+  border: none;
+  border-radius: 12px;
+  padding: 17px 28px;
+  color: #0b1308;
+  background: #b5ff3b;
+  font-weight: 800;
+  transition: background .2s;
+}
+
+.download-form button:hover,
+.result button:hover {
+  background: #d0ff82;
+}
+
+button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.platforms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.platforms span {
+  padding: 9px 15px;
+  background: #151b18;
+  border: 1px solid #28332d;
+  border-radius: 9px;
+  color: #b5c1b9;
+  font-size: 12px;
+}
+
+.error {
+  margin: 30px auto;
+  padding: 16px;
+  max-width: 650px;
+  border: 1px solid #713737;
+  border-radius: 12px;
+  background: #301717;
+  color: #ffaaaa;
+}
+
+.result {
+  max-width: 600px;
+  margin: 45px auto 0;
+  padding: 28px;
+  background: #151b18;
+  border: 1px solid #34483a;
+  border-radius: 20px;
+}
+
+.result h2 {
+  color: #b5ff3b;
+}
+
+.result h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.thumbnail {
+  width: 100%;
+  max-height: 330px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+footer {
+  padding: 26px 16px;
+  border-top: 1px solid #202925;
+  color: #7e8b82;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header-label {
+    display: none;
+  }
+
+  .main {
+    padding-top: 65px;
+  }
+
+  h1 {
+    letter-spacing: -2px;
+  }
+
+  .download-form {
+    flex-direction: column;
+  }
+
+  .download-form input {
+    width: 100%;
+  }
+
+  .download-form button {
+    width: 100%;
+  }
+}
