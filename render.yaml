@@ -1,11 +1,10 @@
 services:
   - type: web
-    name: stealvid-api
-    runtime: python
-    plan: free
-    rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    name: stealvid-frontend
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    autoDeployTrigger: off
     envVars:
-      - key: ALLOWED_ORIGINS
-        value: https://stealvid.com,https://www.stealvid.com
+      - key: VITE_API_URL
+        sync: false
