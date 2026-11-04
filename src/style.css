@@ -7,3 +7,8 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;animation-iteration-count:1!important}}
 
 .beta-label{display:inline-block;font-size:8px;letter-spacing:.4px;border:1px solid #b7ff4735;color:var(--lime);padding:3px 5px;border-radius:5px;margin-left:6px;vertical-align:middle}.beta-notice{font-size:11px;color:#b6c79d;border:1px solid #b7ff4722;border-radius:10px;padding:10px 14px;background:#b7ff4706;line-height:1.7}
+
+/* Sponsored placement: keep ads visually separate from the download controls. */
+.ad-native{width:min(100% - 32px,960px);margin:28px auto 44px;min-height:90px;text-align:center;overflow:hidden;position:relative;z-index:2}
+.ad-label{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#83909e;margin-bottom:10px}
+@media(max-width:600px){.ad-native{margin:20px auto 32px;min-height:65px}}
