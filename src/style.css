@@ -12,3 +12,8 @@
 .ad-native{width:min(100% - 32px,960px);margin:28px auto 44px;min-height:90px;text-align:center;overflow:hidden;position:relative;z-index:2}
 .ad-label{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#83909e;margin-bottom:10px}
 @media(max-width:600px){.ad-native{margin:20px auto 32px;min-height:65px}}
+
+.logo img{display:block}
+.download-progress{margin:12px 0;color:var(--lime)}
+.download-progress-label{display:flex;justify-content:space-between;gap:12px;margin-bottom:6px;font-size:13px;font-variant-numeric:tabular-nums}
+.download-progress progress{display:block;width:100%;height:9px;accent-color:var(--lime)}
